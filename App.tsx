@@ -197,7 +197,7 @@ const Hero = () => {
 };
 
 const About = () => (
-  <section id="about" className="py-24 md:py-32 bg-slate-100 dark:bg-slate-900 transition-colors relative overflow-hidden scroll-mt-20">
+  <section id="about" className="py-8 md:py-12 bg-slate-100 dark:bg-slate-900 transition-colors relative overflow-hidden scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div className="order-2 lg:order-1 space-y-8">
@@ -485,7 +485,7 @@ const Contact = () => (
         <div className="relative">
           <div className="p-8 md:p-12 bg-purple-600 rounded-2xl md:rounded-3xl border-4 md:border-8 border-white text-white shadow-[12px_12px_0px_0px_rgba(255,215,0,1)] transform -rotate-2 hover:rotate-0 transition-transform">
              <h4 className="text-xl md:text-2xl font-black uppercase tracking-tighter italic mb-3 md:mb-4 leading-tight">Ready for a free 15-minute call or your first test session?</h4>
-             <p className="text-sm md:text-base font-bold italic opacity-90">Drop me an email or a WhatsApp message and let's build your STEM future together.</p>
+             <p className="text-sm md:text-base font-bold italic opacity-90">Drop me an email or a WhatsApp message and let's build your future together.</p>
              <div className="mt-6 md:mt-8 flex flex-wrap gap-3">
                 <div className="px-4 md:px-5 py-2 md:py-2.5 bg-white/10 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest">Quick Response</div>
                 <div className="px-4 md:px-5 py-2 md:py-2.5 bg-white/10 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest">Free Consultation</div>
@@ -494,28 +494,10 @@ const Contact = () => (
         </div>
       </div>
     </div>
-  </section>
-);
-
-const Footer = () => (
-  <footer className="bg-white dark:bg-slate-950 py-16 md:py-24 border-t-8 border-slate-900 dark:border-slate-800 transition-colors">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-        <div className="flex items-center gap-4">
-           <div className="w-14 h-14 md:w-16 md:h-16 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl flex items-center justify-center font-black text-2xl md:text-3xl shadow-xl">W</div>
-           <span className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white italic tracking-tighter">Dr WOW</span>
-        </div>
-        <div className="flex flex-wrap justify-center gap-6 md:gap-10">
-           {['Home', 'About', 'Subjects', 'Pricing', 'Consultancy', 'Contact'].map(link => (
-             <a key={link} href={`#${link.toLowerCase()}`} className="text-slate-900 dark:text-white hover:text-purple-600 dark:hover:text-yellow-400 font-black uppercase tracking-[0.2em] text-[10px] md:text-sm transition-all">{link}</a>
-           ))}
-        </div>
-      </div>
-      <div className="mt-16 md:mt-20 pt-10 border-t-2 border-slate-100 dark:border-slate-800 text-center">
-         <p className="text-slate-400 font-black uppercase tracking-[0.4em] md:tracking-[0.5em] text-[8px] md:text-[10px]">© {new Date().getFullYear()} Dr WOW Tutoring | Aberdeen & Online Worldwide</p>
-      </div>
+    <div className="mt-12 md:mt-16 text-center">
+      <p className="text-slate-600 dark:text-slate-400 text-sm font-bold">© 2026 Dr WOW Tutoring</p>
     </div>
-  </footer>
+  </section>
 );
 
 export default function App() {
@@ -531,7 +513,6 @@ export default function App() {
       <Pricing />
       <MusicSection />
       <Contact />
-      <Footer />
       
       {/* Floating NEON Button */}
       <a 
