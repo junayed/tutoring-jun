@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import drHasanImage from '/images/DRHASAN.jpg';
 import { 
   Menu, 
   X, 
@@ -229,7 +230,7 @@ const About = () => (
         <div className="order-1 lg:order-2 flex justify-center">
           <div className="relative">
             <div className="w-[300px] sm:w-[450px] lg:w-[500px] aspect-square bg-white dark:bg-slate-800 border-[10px] md:border-[12px] border-slate-900 rounded-[3rem] md:rounded-[5rem] rotate-3 md:rotate-6 shadow-2xl flex items-center justify-center p-4 overflow-hidden">
-               <img src="/images/DRHASAN.jpg" className="w-full h-full object-cover rounded-[2rem] md:rounded-[3.5rem]" alt="Dr Hasan - Experienced Educator" />
+               <img src={drHasanImage} className="w-full h-full object-cover rounded-[2rem] md:rounded-[3.5rem]" alt="Dr Hasan - Experienced Educator" />
             </div>
             <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 h-24 md:w-32 md:h-32 bg-purple-600 border-4 md:border-8 border-slate-900 rounded-full flex items-center justify-center text-white -rotate-12 animate-bounce">
                <Zap size={40} className="md:w-12 md:h-12" />
