@@ -85,7 +85,7 @@ const Navbar = ({ toggleTheme, theme }: { toggleTheme: () => void, theme: string
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-yellow-400 text-sm font-black uppercase tracking-widest transition-all hover:-translate-y-0.5"
+                className="text-slate-700 dark:text-slate-300 hover:text-purple-600 dark:hover:text-yellow-400 text-xs font-black uppercase tracking-wider transition-all hover:-translate-y-0.5"
               >
                 {link.name}
               </a>
@@ -100,7 +100,7 @@ const Navbar = ({ toggleTheme, theme }: { toggleTheme: () => void, theme: string
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-purple-600 text-white px-8 py-3 rounded-full text-sm font-black uppercase tracking-tighter hover:bg-purple-700 transition-all shadow-[6px_6px_0px_0px_rgba(255,215,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
+              className="bg-purple-600 text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-tighter hover:bg-purple-700 transition-all shadow-[6px_6px_0px_0px_rgba(255,215,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
             >
               Start Now
             </a>
@@ -146,38 +146,38 @@ const Hero = () => {
   const whatsappLink = "https://wa.me/447424433431";
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white dark:bg-slate-950 transition-colors">
+    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white dark:bg-slate-950 transition-colors scroll-mt-20">
       <div className="absolute top-20 right-20 w-32 h-32 bg-yellow-400 border-4 border-slate-900 rounded-full z-0 animate-pulse hidden lg:block" />
-      <div className="absolute bottom-20 left-20 w-48 h-48 bg-purple-600 border-4 border-slate-900 -rotate-12 z-0 hidden lg:block" />
+      <div className="absolute top-1/3 left-12 w-48 h-48 bg-purple-600 border-4 border-slate-900 -rotate-12 z-0 hidden lg:block" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 lg:py-0">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center lg:text-left space-y-6">
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-yellow-400 border-4 border-slate-900 text-slate-900 text-xs font-black uppercase tracking-widest rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <Sparkles size={16} /> 15+ Years Expert Experience
             </div>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-slate-900 dark:text-white leading-[0.85] tracking-tighter uppercase italic drop-shadow-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-[0.85] tracking-tighter uppercase italic drop-shadow-2xl">
               Education <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-purple-600">With a WOW</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 font-bold leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto lg:mx-0 font-bold leading-relaxed">
               Mathematics, Physics, IT & Statistics. <br />
               <span className="text-purple-600 dark:text-yellow-400">UK Wide Online</span> or <span className="underline decoration-orange-500 decoration-4 underline-offset-4">Aberdeen In-Person</span>.
             </p>
-            <div className="flex flex-col sm:flex-row gap-8 justify-center lg:justify-start pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center px-12 py-6 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-[2rem] text-xl md:text-2xl font-black uppercase tracking-tighter hover:bg-slate-800 transition-all shadow-[10px_10px_0px_0px_rgba(255,215,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                className="group flex items-center justify-center px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-[2rem] text-xs md:text-sm font-black uppercase tracking-tighter hover:bg-slate-800 transition-all shadow-[10px_10px_0px_0px_rgba(255,215,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
               >
-                Book Test Session <ArrowRight className="ml-2 group-hover:translate-x-3 transition-transform" size={28} />
+                Book Test Session <ArrowRight className="ml-2 group-hover:translate-x-3 transition-transform" size={18} />
               </a>
             </div>
           </div>
           
           <div className="relative group hidden lg:block">
-            <div className="relative z-10 w-full h-[650px] bg-yellow-400 border-[12px] border-slate-900 rounded-[5rem] overflow-hidden shadow-[20px_20px_0px_0px_rgba(147,51,234,1)] transform rotate-3 group-hover:rotate-0 transition-all duration-700">
+            <div className="relative z-10 w-full h-[500px] bg-yellow-400 border-[12px] border-slate-900 rounded-[5rem] overflow-hidden shadow-[20px_20px_0px_0px_rgba(147,51,234,1)] transform rotate-3 group-hover:rotate-0 transition-all duration-700">
               <img 
                 src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80" 
                 alt="Dr WOW Tutoring" 
@@ -203,33 +203,33 @@ const About = () => (
           <div className="inline-block px-4 py-2 bg-orange-500 text-white text-xs font-black uppercase tracking-widest rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             Meet Your Tutor
           </div>
-          <h3 className="text-5xl md:text-6xl font-black text-slate-900 dark:text-white uppercase tracking-tighter leading-none italic">
+          <h3 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white uppercase tracking-tighter leading-none italic">
             Hi, I'm <a href="https://drjunayed.dataxense.co.uk" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-yellow-400 underline decoration-slate-900 dark:decoration-white decoration-4 md:decoration-8 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">DR HASAN</a>
           </h3>
-          <div className="space-y-6 text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-bold">
+          <div className="space-y-4 text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed font-bold">
             <p>
-              Hi, I’m Dr Hasan, an experienced educator with a <span className="text-slate-900 dark:text-white">PhD in Artificial Intelligence</span> and over <span className="text-slate-900 dark:text-white">15 years of teaching experience</span>. I’ve supported learners at every level — from early primary school through to university and postgraduate research. 
+              An experienced educator with a <span className="text-slate-900 dark:text-white">PhD in Artificial Intelligence</span> and over <span className="text-slate-900 dark:text-white">15 years of teaching experience</span>. I've supported learners at every level — from early primary school through to university and postgraduate research. 
             </p>
             <p>
               Over the years, I’ve helped thousands of students build confidence, deepen understanding and achieve their academic goals in Mathematics, Physics, IT and related STEM subjects, both online and in person. My lessons are interactive and tailored to each student’s needs, whether you’re preparing for school exams, university courses, or advanced study.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 md:gap-6 pt-4">
-            <div className="p-4 md:p-6 bg-white dark:bg-slate-800 border-4 border-slate-900 dark:border-slate-700 rounded-3xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.05)]">
+            <div className="p-4 md:p-6 bg-white dark:bg-slate-800 border-4 border-slate-900 dark:border-slate-700 rounded-3xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.05)] animate-bounce">
               <p className="text-3xl md:text-4xl font-black text-purple-600">15+</p>
               <p className="text-[10px] md:text-xs font-black uppercase text-slate-500 tracking-widest mt-1">Years Teaching</p>
             </div>
-            <div className="p-4 md:p-6 bg-yellow-400 border-4 border-slate-900 rounded-3xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+            <a href="https://scholar.google.com/citations?user=6dp1PZAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="p-4 md:p-6 bg-yellow-400 border-4 border-slate-900 rounded-3xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] animate-bounce hover:scale-110 transition-transform cursor-pointer">
               <p className="text-3xl md:text-4xl font-black text-slate-900">PhD</p>
               <p className="text-[10px] md:text-xs font-black uppercase text-slate-900 tracking-widest mt-1">AI Expert</p>
-            </div>
+            </a>
           </div>
         </div>
         
         <div className="order-1 lg:order-2 flex justify-center">
           <div className="relative">
             <div className="w-[300px] sm:w-[450px] lg:w-[500px] aspect-square bg-white dark:bg-slate-800 border-[10px] md:border-[12px] border-slate-900 rounded-[3rem] md:rounded-[5rem] rotate-3 md:rotate-6 shadow-2xl flex items-center justify-center p-4 overflow-hidden">
-               <img src="https://drjunayed.dataxense.co.uk/hasan.jpg" className="w-full h-full object-cover rounded-[2rem] md:rounded-[3.5rem]" alt="Dr Hasan - Experienced Educator" />
+               <img src="/images/DRHASAN.jpg" className="w-full h-full object-cover rounded-[2rem] md:rounded-[3.5rem]" alt="Dr Hasan - Experienced Educator" />
             </div>
             <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 h-24 md:w-32 md:h-32 bg-purple-600 border-4 md:border-8 border-slate-900 rounded-full flex items-center justify-center text-white -rotate-12 animate-bounce">
                <Zap size={40} className="md:w-12 md:h-12" />
@@ -250,40 +250,40 @@ const Subjects = () => {
   ];
 
   return (
-    <section id="subjects" className="py-24 md:py-32 bg-white dark:bg-slate-950 transition-colors scroll-mt-20">
+    <section id="subjects" className="py-12 md:py-16 bg-white dark:bg-slate-950 transition-colors scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24 space-y-6">
-          <h2 className="text-purple-600 dark:text-yellow-400 font-black uppercase tracking-[0.4em] text-sm">Curriculum Focus</h2>
-          <h3 className="text-4xl md:text-6xl lg:text-8xl font-black text-slate-900 dark:text-white uppercase tracking-tighter italic">National & Scottish Level <br className="hidden md:block"/> and Beyond</h3>
+        <div className="text-center mb-8 md:mb-10 space-y-3">
+          <h2 className="text-purple-600 dark:text-yellow-400 font-black uppercase tracking-[0.4em] text-xs">Curriculum Focus</h2>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white uppercase tracking-tighter italic">National & Scottish Level <br className="hidden md:block"/> and Beyond</h3>
         </div>
         
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-12 mb-16 md:mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-14">
           {categories.map((cat, i) => (
-            <div key={i} className={`p-6 md:p-10 ${cat.color} ${cat.textColor} rounded-[2rem] md:rounded-[3rem] border-4 md:border-8 border-slate-900 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] transition-all ${cat.anim} cursor-default group`}>
-              <cat.icon size={48} className="mb-4 md:mb-8 group-hover:scale-125 transition-transform" />
-              <h4 className="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-tighter mb-2 md:mb-4 italic">{cat.title}</h4>
-              <p className="font-bold opacity-80 uppercase text-[8px] md:text-xs tracking-widest">Expert Mentorship</p>
+            <div key={i} className={`p-4 md:p-6 ${cat.color} ${cat.textColor} rounded-xl md:rounded-2xl border-4 border-slate-900 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] transition-all ${cat.anim} cursor-default group`}>
+              <cat.icon size={32} className="mb-2 md:mb-4 group-hover:scale-125 transition-transform" />
+              <h4 className="text-lg md:text-xl lg:text-2xl font-black uppercase tracking-tighter mb-1 md:mb-2 italic">{cat.title}</h4>
+              <p className="font-bold opacity-80 uppercase text-[7px] md:text-[9px] tracking-widest">Expert Mentorship</p>
             </div>
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          <div className="p-8 md:p-10 bg-slate-900 text-white rounded-[3rem] md:rounded-[4rem] border-8 border-yellow-400 shadow-2xl transition-transform hover:rotate-1">
-            <h4 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-yellow-400 mb-6 md:mb-8 italic">Scottish Curriculum</h4>
-            <ul className="space-y-3 md:space-y-4 font-bold text-base md:text-lg">
-              <li className="flex gap-4 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" /> CfE Early to Senior Phase</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" /> S4-S6 Excellence</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" /> National 3-5 Focus</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" /> Advanced Higher Mastery</li>
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div className="p-6 md:p-8 bg-slate-900 text-white rounded-2xl md:rounded-3xl border-8 border-yellow-400 shadow-2xl transition-transform hover:rotate-1">
+            <h4 className="text-2xl md:text-3xl font-black uppercase tracking-tighter text-yellow-400 mb-4 md:mb-5 italic">Scottish Curriculum</h4>
+            <ul className="space-y-2 md:space-y-3 font-bold text-sm md:text-base">
+              <li className="flex gap-3 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" size={18} /> CfE Early to Senior Phase</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" size={18} /> S4-S6 Excellence</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" size={18} /> National 3-5 Focus</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-yellow-400 flex-shrink-0" size={18} /> Advanced Higher Mastery</li>
             </ul>
           </div>
-          <div className="p-8 md:p-10 bg-purple-600 text-white rounded-[3rem] md:rounded-[4rem] border-8 border-slate-900 shadow-2xl transition-transform hover:-rotate-1">
-            <h4 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-white mb-6 md:mb-8 italic">England & UK Wide</h4>
-            <ul className="space-y-3 md:space-y-4 font-bold text-base md:text-lg">
-              <li className="flex gap-4 items-center"><CheckCircle className="text-white flex-shrink-0" /> KS1-KS4 National Curriculum</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-white flex-shrink-0" /> GCSE & A Levels STEM</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-white flex-shrink-0" /> University / PhD Modules</li>
-              <li className="flex gap-4 items-center"><CheckCircle className="text-white flex-shrink-0" /> AI & Statistics Support</li>
+          <div className="p-6 md:p-8 bg-purple-600 text-white rounded-2xl md:rounded-3xl border-8 border-slate-900 shadow-2xl transition-transform hover:-rotate-1">
+            <h4 className="text-2xl md:text-3xl font-black uppercase tracking-tighter text-white mb-4 md:mb-5 italic">England & UK Wide</h4>
+            <ul className="space-y-2 md:space-y-3 font-bold text-sm md:text-base">
+              <li className="flex gap-3 items-center"><CheckCircle className="text-white flex-shrink-0" size={18} /> KS1-KS4 National Curriculum</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-white flex-shrink-0" size={18} /> GCSE & A Levels STEM</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-white flex-shrink-0" size={18} /> University / PhD Modules</li>
+              <li className="flex gap-3 items-center"><CheckCircle className="text-white flex-shrink-0" size={18} /> AI & Statistics Support</li>
             </ul>
           </div>
         </div>
@@ -293,22 +293,22 @@ const Subjects = () => {
 };
 
 const Consultancy = () => (
-  <section id="consultancy" className="py-24 md:py-32 bg-orange-500 text-slate-900 overflow-hidden relative scroll-mt-20">
+  <section id="consultancy" className="py-16 md:py-20 bg-orange-500 text-slate-900 overflow-hidden relative scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div className="flex flex-col lg:flex-row gap-12 md:gap-16 items-center">
-        <div className="lg:w-1/2 space-y-8 md:space-y-10">
+      <div className="flex flex-col lg:flex-row gap-12 md:gap-16 items-start">
+        <div className="lg:w-1/2 space-y-6 md:space-y-8">
           <div className="inline-block px-4 py-2 bg-slate-900 text-white text-xs font-black uppercase tracking-widest rounded-lg">High-Level Services</div>
-          <h3 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] italic drop-shadow-lg">Thesis <br/> Consultancy</h3>
-          <p className="text-xl md:text-2xl font-bold leading-tight max-w-lg">
-            Supporting MSc & PhD researchers with methodology, AI implementation, and complex data analysis.
+          <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.85] italic drop-shadow-lg">Thesis <br/> Consultancy</h3>
+          <p className="text-base md:text-lg font-bold leading-tight max-w-lg">
+            Supporting <span className="font-black">MSc, PhD, DENG, DBA</span> with methodology, AI implementation, and complex analysis.
           </p>
           <div className="p-6 md:p-8 bg-white border-4 md:border-8 border-slate-900 rounded-[2rem] md:rounded-[3rem] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center gap-4 md:gap-6 group hover:scale-105 transition-transform">
-            <div className="w-16 h-16 md:w-20 md:h-20 bg-purple-600 rounded-2xl flex items-center justify-center text-white shadow-xl">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-purple-600 rounded-2xl flex items-center justify-center text-white shadow-xl flex-shrink-0">
               <Video size={36} className="md:w-10 md:h-10" />
             </div>
             <div>
-              <h4 className="text-xl md:text-2xl font-black uppercase tracking-tighter">Bespoke Arrangements</h4>
-              <p className="text-slate-600 font-bold text-sm md:text-base">Contact for a <span className="text-purple-600">Free 15-Min Call</span> to discuss your unique project roadmap.</p>
+              <h4 className="text-lg md:text-xl font-black uppercase tracking-tighter">Bespoke Arrangements</h4>
+              <p className="text-slate-600 font-bold text-xs md:text-sm">Contact for a <span className="text-purple-600">Free 15-Min Call</span> to discuss your unique project roadmap.</p>
             </div>
           </div>
         </div>
@@ -317,13 +317,13 @@ const Consultancy = () => (
            <div className="p-8 md:p-10 bg-white border-4 md:border-8 border-slate-900 rounded-[2rem] md:rounded-[3rem] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] space-y-4">
               {/* Fix: Merged duplicate className attributes */}
               <Search className="text-orange-500 md:w-12 md:h-12" size={40} />
-              <h5 className="text-xl md:text-2xl font-black uppercase italic tracking-tighter">AI Specialist</h5>
+              <h5 className="text-lg md:text-xl font-black uppercase italic tracking-tighter">AI Specialist</h5>
               <p className="text-xs md:text-sm font-bold text-slate-600">Guidance on AI research, machine learning modules, and thesis defense prep.</p>
            </div>
            <div className="p-8 md:p-10 bg-yellow-400 border-4 md:border-8 border-slate-900 rounded-[2rem] md:rounded-[3rem] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] space-y-4 md:mt-8">
               {/* Fix: Merged duplicate className attributes */}
               <BarChart className="text-slate-900 md:w-12 md:h-12" size={40} />
-              <h5 className="text-xl md:text-2xl font-black uppercase italic tracking-tighter">Data Sense</h5>
+              <h5 className="text-lg md:text-xl font-black uppercase italic tracking-tighter">Data Sense</h5>
               <p className="text-xs md:text-sm font-bold text-slate-900">Professional statistical interpretation for post-graduate datasets.</p>
            </div>
         </div>
@@ -350,13 +350,13 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 md:py-32 bg-white dark:bg-slate-900 transition-colors scroll-mt-20">
+    <section id="pricing" className="py-12 md:py-16 bg-white dark:bg-slate-900 transition-colors scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24 space-y-6">
-          <h2 className="text-purple-600 dark:text-yellow-400 font-black uppercase tracking-[0.4em] text-sm">Simple Packages</h2>
-          <h3 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white uppercase tracking-tighter italic">Transparent Rates</h3>
+      <div className="text-center mb-8 md:mb-12 space-y-3">
+          <h2 className="text-purple-600 dark:text-yellow-400 font-black uppercase tracking-[0.4em] text-xs">Simple Packages</h2>
+          <h3 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white uppercase tracking-tighter italic">Transparent Rates</h3>
           
-          <div className="inline-flex p-1.5 bg-slate-100 dark:bg-slate-800 border-2 md:border-4 border-slate-900 dark:border-slate-700 rounded-3xl mt-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+          <div className="inline-flex p-1.5 bg-slate-100 dark:bg-slate-800 border-2 md:border-4 border-slate-900 dark:border-slate-700 rounded-3xl mt-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
             <button 
               onClick={() => setIsIndividual(true)}
               className={`px-6 md:px-10 py-3 md:py-4 rounded-2xl font-black uppercase tracking-widest text-xs md:text-sm transition-all ${isIndividual ? 'bg-purple-600 text-white shadow-xl' : 'text-slate-500 hover:text-slate-900 dark:hover:text-white'}`}
@@ -453,42 +453,41 @@ const MusicSection = () => (
 const Contact = () => (
   <section id="contact" className="py-24 md:py-32 bg-slate-900 dark:bg-black transition-colors relative scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div className="grid lg:grid-cols-2 gap-16 md:gap-24 items-center">
-        <div className="space-y-8 md:space-y-10">
+      <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="space-y-6 md:space-y-8">
           <div className="inline-block px-4 py-2 bg-yellow-400 text-slate-900 text-xs font-black uppercase tracking-widest rounded-lg">Get In Touch</div>
-          <h3 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85] italic">Start Your <br/> Journey</h3>
-          <p className="text-xl md:text-2xl font-bold text-slate-400">Ready for a free 15-minute call or your first test session? Drop me an email or a WhatsApp message.</p>
+          <h3 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter leading-[0.85] italic">Start Your <br/> Journey</h3>
+          <p className="text-base md:text-lg font-bold text-slate-300">Ready for a free 15-minute call or your first test session? Drop me an email or a WhatsApp message.</p>
           
-          <div className="space-y-6 md:space-y-8 pt-4 md:pt-8">
-             <a href="mailto:j.hasan@dataxense.co.uk" className="flex items-center gap-4 md:gap-6 group">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl md:rounded-3xl flex items-center justify-center text-slate-900 group-hover:bg-yellow-400 group-hover:rotate-12 transition-all shadow-xl">
-                   <Mail size={32} className="md:w-10 md:h-10" />
+          <div className="space-y-4 md:space-y-5 pt-2 md:pt-4">
+             <a href="mailto:j.hasan@dataxense.co.uk" className="flex items-center gap-3 md:gap-4 group">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-lg md:rounded-2xl flex items-center justify-center text-slate-900 group-hover:bg-yellow-400 group-hover:rotate-12 transition-all shadow-lg flex-shrink-0">
+                   <Mail size={24} className="md:w-7 md:h-7" />
                 </div>
-                <div className="space-y-0.5 md:space-y-1">
-                   <p className="text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-500">Email Me Directly</p>
-                   <p className="text-xl sm:text-2xl lg:text-3xl font-black text-white group-hover:text-yellow-400 transition-colors break-all">j.hasan@dataxense.co.uk</p>
+                <div className="space-y-0.5">
+                   <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400">Email</p>
+                   <p className="text-sm md:text-base font-black text-white group-hover:text-yellow-400 transition-colors break-all">j.hasan@dataxense.co.uk</p>
                 </div>
              </a>
-             <a href="https://wa.me/447424433431" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 md:gap-6 group">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-green-500 rounded-2xl md:rounded-3xl flex items-center justify-center text-white group-hover:bg-yellow-400 group-hover:-rotate-12 transition-all shadow-xl">
-                   <MessageSquare size={32} className="md:w-10 md:h-10" />
+             <a href="https://wa.me/447424433431" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 md:gap-4 group">
+                <div className="w-14 h-14 md:w-16 md:h-16 bg-green-500 rounded-lg md:rounded-2xl flex items-center justify-center text-white group-hover:bg-yellow-400 group-hover:-rotate-12 transition-all shadow-lg flex-shrink-0">
+                   <MessageSquare size={24} className="md:w-7 md:h-7" />
                 </div>
-                <div className="space-y-0.5 md:space-y-1">
-                   <p className="text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-500">WhatsApp Only</p>
-                   <p className="text-2xl md:text-3xl font-black text-white group-hover:text-yellow-400 transition-colors">+44 7424 433431</p>
+                <div className="space-y-0.5">
+                   <p className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400">WhatsApp</p>
+                   <p className="text-sm md:text-base font-black text-white group-hover:text-yellow-400 transition-colors">+44 7424 433431</p>
                 </div>
              </a>
           </div>
         </div>
         
         <div className="relative">
-          <div className="p-10 md:p-16 bg-purple-600 rounded-[3rem] md:rounded-[5rem] border-4 md:border-8 border-white text-white shadow-[12px_12px_0px_0px_rgba(255,215,0,1)] transform -rotate-2 hover:rotate-0 transition-transform">
-             <Star size={48} className="mb-6 md:mb-10 text-yellow-400 fill-yellow-400 md:w-16 md:h-16" />
-             <h4 className="text-2xl md:text-4xl font-black uppercase tracking-tighter italic mb-4 md:mb-6 leading-tight">Expert Guidance is just an email away.</h4>
-             <p className="text-lg md:text-xl font-bold italic opacity-90">"I reply fastest to drop-in emails. Let's build your STEM future together."</p>
-             <div className="mt-8 md:mt-12 flex flex-wrap gap-4">
-                <div className="px-5 md:px-6 py-2 md:py-3 bg-white text-slate-900 font-black uppercase text-[10px] md:text-xs tracking-widest rounded-full">No Contact Forms</div>
-                <div className="px-5 md:px-6 py-2 md:py-3 bg-slate-900 text-white font-black uppercase text-[10px] md:text-xs tracking-widest rounded-full">Direct Access</div>
+          <div className="p-8 md:p-12 bg-purple-600 rounded-2xl md:rounded-3xl border-4 md:border-8 border-white text-white shadow-[12px_12px_0px_0px_rgba(255,215,0,1)] transform -rotate-2 hover:rotate-0 transition-transform">
+             <h4 className="text-xl md:text-2xl font-black uppercase tracking-tighter italic mb-3 md:mb-4 leading-tight">Ready for a free 15-minute call or your first test session?</h4>
+             <p className="text-sm md:text-base font-bold italic opacity-90">Drop me an email or a WhatsApp message and let's build your STEM future together.</p>
+             <div className="mt-6 md:mt-8 flex flex-wrap gap-3">
+                <div className="px-4 md:px-5 py-2 md:py-2.5 bg-white/10 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest">Quick Response</div>
+                <div className="px-4 md:px-5 py-2 md:py-2.5 bg-white/10 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-widest">Free Consultation</div>
              </div>
           </div>
         </div>
