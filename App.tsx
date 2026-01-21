@@ -152,12 +152,12 @@ const Hero = () => {
       <div className="absolute top-1/3 left-12 w-48 h-48 bg-purple-600 border-4 border-slate-900 -rotate-12 z-0 hidden lg:block" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 lg:py-0">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left space-y-6">
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-yellow-400 border-4 border-slate-900 text-slate-900 text-xs font-black uppercase tracking-widest rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
               <Sparkles size={16} /> 15+ Years Expert Experience
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-[0.85] tracking-tighter uppercase italic drop-shadow-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[0.85] tracking-tighter uppercase italic drop-shadow-2xl">
               Education <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-purple-600">With a WOW</span>
             </h1>
