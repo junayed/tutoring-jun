@@ -1,0 +1,8 @@
+{
+  "name": "Dr Hasan Tutoring",
+  "description": "Professional tutoring platform for Dr Hasan, specializing in Mathematics, Physics, and IT from school level to PhD.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
